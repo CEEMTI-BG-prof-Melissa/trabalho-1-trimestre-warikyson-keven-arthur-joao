@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <body>
+        <?php
+            $preco = 120;
+            $quantidade = 3;
+            $desconto = 30;
+            $parcelas = 2;
+            $vtot = $preço * $quantidade;
+            $vfin = $vtot - $desconto;
+            $vpar = $vfin / $parcelas;
+            $vadd = $vtot + 15;
+            $rest = $vfin % 2;
+
+            echo "O valor total da compra é: " .$vtot;
+            echo "O valor da compra após o desconto é: " .$vfin;
+            echo "O valor de cada parcela é: " .$vpar;
+            echo "O valor da compra com taxa de R$15,00 é: " .$vadd;
+            echo "O resto da divisão é: " .$rest;
+        ?>
+    <body>
+<html>
